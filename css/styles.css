@@ -1,0 +1,69 @@
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+  background-color: slategray;
+}
+img {
+  width: 35px;
+}
+.profile-pic {
+    width: 50px;
+    border-radius: 50px;
+}
+
+/* Grid Dashboard */
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px auto;
+}
+
+.navigation-vertical {
+  background-color: blue;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  padding-left: 15px;
+  padding-top: 15px;
+  font-size: 25px;
+  height: 100vh;
+}
+.navigation-horizontal {
+  background-color: #cf0a0a;
+  height: 150px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.logo-dash {
+  display: flex;
+  align-items: center;
+  padding-bottom: 35px;
+}
+
+/* Grid Container Projects */
+
+.your-projects-header {
+    font-size: 20px;
+}
+.grid-container-your-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-gap: 20px;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.grid-item {
+  border-radius: 10px;
+  height: 200px;
+  padding: 20px;
+  background-color: white;
+}
+.grid-item-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
