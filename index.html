@@ -1,142 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Admin Dashboard</title>
-  </head>
-  <body>
-    <div class="grid-container">
-      <div class="navigation-vertical">
-        <div class="logo-dash">
-          <img src="images/view-grid.svg" alt="" />
-          <h1>Dashboard</h1>
-        </div>
 
-        <ul>
-          <li><img src="images/home.svg" alt="" /> Home</li>
-          <li><img src="images/face-man-profile.svg" alt="" /> Profile</li>
-          <li><img src="images/message-reply.svg" alt="" /> Messages</li>
-          <li><img src="images/history.svg" alt="" /> History</li>
-          <li>
-            <img src="images/checkbox-marked-circle-plus-outline.svg" alt="" />
-            Tasks
-          </li>
-          <li><img src="images/account-group.svg" alt="" /> Communities</li>
-          <li><img src="images/cog-outline.svg" alt="" /> Settings</li>
-          <li><img src="images/face-agent.svg" alt="" /> Support</li>
-          <li><img src="images/account-alert.svg" alt="" /> Privacy</li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Admin Dashboard</title>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="navigation-vertical">
+      <div class="logo-dash">
+        <img src="images/view-grid.svg" alt="" />
+        <h1>Dashboard</h1>
       </div>
 
-      <div class="navigation-horizontal">
-        <img class="nav-svg" src="images/magnify.svg" alt="" />
+      <ul>
+        <li><img src="images/home.svg" alt="" /> Home</li>
+        <li><img src="images/face-man-profile.svg" alt="" /> Profile</li>
+        <li><img src="images/message-reply.svg" alt="" /> Messages</li>
+        <li><img src="images/history.svg" alt="" /> History</li>
+        <li>
+          <img src="images/checkbox-marked-circle-plus-outline.svg" alt="" />
+          Tasks
+        </li>
+        <li><img src="images/account-group.svg" alt="" /> Communities</li>
+        <li><img src="images/cog-outline.svg" alt="" /> Settings</li>
+        <li><img src="images/face-agent.svg" alt="" /> Support</li>
+        <li><img src="images/account-alert.svg" alt="" /> Privacy</li>
+      </ul>
+    </div>
+
+    <div class="navigation-horizontal">
+      <div class="flex">
+        <div class="search-wrapper">
+        <img class="nav-svg nav-svg-1" src="images/magnify.svg" alt="" />
         <input type="text" placeholder="" />
-        <img class="nav-svg" src="images/bell.svg" alt="" />
-        <img
-          class="profile-pic"
-          src="images/profile-picture.png"
-          alt=""
-        />
       </div>
 
-      <div class="your-projects-header">Your Projects</div>
-      <div class="grid-container-your-projects">
-        <div class="grid-item grid-item-1">
-          <p>Super Cool Project</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
-            aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
-            soluta ratione?
-          </p>
+        <div class="nav-wrapper">
+          <img class="nav-svg" src="images/bell.svg" alt="" />
+          <img class="profile-pic" src="images/profile-picture.png" alt="" />
+          <p>User Name</p>
         </div>
+      </div>
 
-        <div class="grid-item grid-item-2">
-          <p>Less Cool Project</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
-            aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
-            soluta ratione?
-          </p>
-        </div>
+      <div class="navigation-horizontal-2nd-row">
 
-        <div class="grid-item grid-item-3">
-          <p>Impossible App</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
-            aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
-            soluta ratione?
-          </p>
+      <div class="nav-wrapper-2">
+        <img class="profile-pic profile-pic-2" src="images/profile-picture.png" alt="" />
+        <div class="text-wrapper">
+        <p>Hi there,
+        <p class="bold-text">User<span>(@username)</span></p>
+        </p>
         </div>
-
-        <div class="grid-item grid-item-4">
-          <p>Easy Peasy App</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
-            aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
-            soluta ratione?
-          </p>
-        </div>
-
-        <div class="grid-item grid-item-5">
-          <p>Ad Blocker</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
-            aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
-            soluta ratione?
-          </p>
-        </div>
-
-        <div class="grid-item grid-item-6">
-          <p>Money Maker</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
-            aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
-            soluta ratione?
-          </p>
-        </div>
-
-        <div class="grid-item grid-item-7">
-          <p>Site Maintenance</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
-            aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
-            soluta ratione?
-          </p>
-          <hr />
-          <p>Community Share Day</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
-            aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
-            soluta ratione?
-          </p>
-          <hr />
-          <p>Updated Privacy Policy</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
-            aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
-            soluta ratione?
-          </p>
-        </div>
-
-        <div class="grid-item grid-item-8">
-          <p>Trending</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
-            aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
-            soluta ratione?
-          </p>
-        </div>
+        
+        <div class="nav-wrapper-3">
+        <div class="btn">New</div>
+        <div class="btn">Upload</div>
+        <div class="btn">Share</div>
+      </div>
       </div>
     </div>
-  </body>
+    </div>
+
+    <div class="your-projects-header"><p class="text-header text-header-1">Your Projects</p></div>
+    <div class="grid-container-your-projects">
+      <div class="grid-item grid-item-1">
+        <p class="text-header">Super Cool Project</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
+          aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
+          soluta ratione?
+        </p>
+      </div>
+
+      <div class="grid-item grid-item-2">
+        <p class="text-header">Less Cool Project</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
+          aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
+          soluta ratione?
+        </p>
+      </div>
+
+      <div class="grid-item grid-item-3">
+        <p class="text-header">Impossible App</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
+          aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
+          soluta ratione?
+        </p>
+      </div>
+
+      <div class="grid-item grid-item-4">
+        <p class="text-header">Easy Peasy App</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
+          aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
+          soluta ratione?
+        </p>
+      </div>
+
+      <div class="grid-item grid-item-5">
+        <p class="text-header">Ad Blocker</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
+          aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
+          soluta ratione?
+        </p>
+      </div>
+
+      <div class="grid-item grid-item-6">
+        <p class="text-header">Money Maker</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
+          aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
+          soluta ratione?
+        </p>
+      </div>
+
+      <div class="grid-item grid-item-7">
+        <p class="text-header">Site Maintenance</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
+          aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
+          soluta ratione?
+        </p>
+        <hr />
+        <p class="text-header">Community Share Day</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
+          aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
+          soluta ratione?
+        </p>
+        <hr />
+        <p>Updated Privacy Policy</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
+          aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
+          soluta ratione?
+        </p>
+      </div>
+
+      <div class="grid-item grid-item-8">
+        <p class="text-header">Trending</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo
+          aliquam, enim doloribus voluptates facere maiores ipsum? Alias,
+          soluta ratione?
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

@@ -1,9 +1,11 @@
 html {
   font-family: "Roboto Condensed", sans-serif;
 }
+
 body {
-  background-color: slategray;
+  background-color: #e2e8f0;
 }
+
 img {
   width: 35px;
   filter: invert(100%);
@@ -14,41 +16,120 @@ img {
   background-color: #2393d2;
   grid-row-start: 1;
   grid-row-end: 4;
-  padding-left: 15px;
+  padding-left: 30px;
   padding-top: 15px;
   font-size: 25px;
   height: 100vh;
+  color: white;
+  font-weight: 600;
 }
 
 ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  font-size: 20px;
 }
-.logo-dash {
-  display: flex;
-  align-items: center;
-  padding-bottom: 35px;
+
+ul img {
+  vertical-align: middle;
+  margin-right: 15px;
 }
 
 /* Navigation Horizontal */
+.flex {
+  display: flex;
+  margin-top: 5px;
+}
+.search-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nav-svg-1 {
+  margin-right: 35px;
+}
+
+.nav-wrapper {
+  margin-left: 65px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-wrapper img {
+  margin-left: 35px;
+}
+
+.nav-wrapper p {
+  margin-left: 35px;
+}
+
 .navigation-horizontal {
   background-color: white;
-  height: 150px;
+  padding: 20px;
 }
+
 .nav-svg {
   filter: none;
 }
+
 input {
   border: none;
   border-radius: 20px;
   background-color: #e2e8f0;
-  width: 500px;
+  width: 1000px;
+  height: 30px;
 }
+
 .profile-pic {
   width: 50px;
   border-radius: 50px;
   filter: hue-rotate(205deg);
+}
+
+.profile-pic-2 {
+  width: 90px;
+}
+
+.nav-wrapper-2 {
+  display: flex;
+  align-items: center;
+}
+
+.text-wrapper {
+  line-height: 25px;
+  margin-left: 20px;
+}
+
+.bold-text {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+span {
+  margin-left: 5px;
+}
+
+.nav-wrapper-3 {
+  display: flex;
+  margin-left: 700px;
+}
+
+.navigation-horizontal-2nd-row {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.btn {
+  background-color: #1992d4;
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 20px;
 }
 
 /* Grid Dashboard */
@@ -61,23 +142,50 @@ input {
 
 .your-projects-header {
   font-size: 20px;
+  margin-top: 40px;
 }
+.text-header {
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.text-header-1 {
+  margin-left: 25px;
+}
+
 .grid-container-your-projects {
   display: grid;
   grid-template-columns: repeat(3, 250px);
-  grid-gap: 20px;
+  grid-gap: 80px;
   margin-left: 25px;
   margin-top: 15px;
+  grid-template-areas:
+      "header  sidebar"
+      "nav     nav"
+      "sidebar content"
+      "ad      footer";
 }
 
 .grid-item {
   border-left: 7px solid #ff8e02;
   border-radius: 10px;
-  height: 200px;
+  height: 150px;
+  width: 250px;
   padding: 20px;
   background-color: white;
 }
+
 .grid-item-1 {
-  grid-row-start: 1;
-  grid-row-end: 2;
+}
+
+.grid-item-7 {
+  height: 250px;
+  width: 200px;
+  grid-area: sidebar;
+}
+
+.grid-item-8 {
+  background-color: red;
+  height: 250px;
+  width: 200px;
+  
 }
