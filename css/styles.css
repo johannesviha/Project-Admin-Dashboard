@@ -4,10 +4,11 @@ html {
 
 body {
   background-color: #e2e8f0;
+  overflow: hidden;
 }
 
 img {
-  width: 35px;
+  width: 50px;
   filter: invert(100%);
 }
 
@@ -19,9 +20,16 @@ img {
   padding-left: 30px;
   padding-top: 15px;
   font-size: 25px;
-  height: 100vh;
+  height: 100%;
   color: white;
   font-weight: 600;
+}
+
+.logo-dash {
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+  gap: 20px;
 }
 
 ul {
@@ -41,6 +49,7 @@ ul img {
   display: flex;
   margin-top: 5px;
 }
+
 .search-wrapper {
   display: flex;
   align-items: center;
@@ -144,48 +153,87 @@ span {
   font-size: 20px;
   margin-top: 40px;
 }
+
 .text-header {
   font-weight: 600;
   margin-bottom: 7px;
 }
+
 .text-header-1 {
   margin-left: 25px;
 }
 
 .grid-container-your-projects {
   display: grid;
-  grid-template-columns: repeat(3, 250px);
+  grid-template-columns: repeat(2, 10fr) 250px repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-gap: 80px;
   margin-left: 25px;
   margin-top: 15px;
-  grid-template-areas:
-      "header  sidebar"
-      "nav     nav"
-      "sidebar content"
-      "ad      footer";
 }
 
 .grid-item {
   border-left: 7px solid #ff8e02;
   border-radius: 10px;
-  height: 150px;
-  width: 250px;
   padding: 20px;
   background-color: white;
+  height: 100px;
+}
+
+.paragraph-wrapper {
+  margin-left: 10px;
+}
+
+.paragraph-color {
+  color: slategray;
+  margin-top: 5px;
 }
 
 .grid-item-1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.grid-item-2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.grid-item-3 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.grid-item-4 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.grid-item-5 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.grid-item-6 {
+  grid-area: 3 / 2 / 4 / 3;
 }
 
 .grid-item-7 {
-  height: 250px;
-  width: 200px;
-  grid-area: sidebar;
+  grid-area: 1 / 3 / 3 / 4;
+  height: 230px;
+  font-size: 13px;
 }
 
 .grid-item-8 {
-  background-color: red;
-  height: 250px;
-  width: 200px;
-  
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+  grid-area: 2 / 3 / 5 / 4;
+  margin-top: 90px;
+}
+
+.item-8-wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.item-8-wrapper img {
+  filter: hue-rotate(150deg);
+  width: 45px;
 }
